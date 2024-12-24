@@ -1,0 +1,145 @@
+.cover-container {
+  position: relative;
+   margin-top: 40px;
+   margin-left: 120px;
+   margin-right: 120px;
+}
+
+.image {
+  object-fit: contain;
+  width: 100%;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  position: absolute;
+  left: 3px;
+  bottom: -15px;
+}
+
+
+@media(max-width: 768px) {
+   .cover-container {
+    margin: 0;
+    padding: 0;
+    margin-top: 39px;
+   }
+
+   .image {
+      width: 100%;
+      object-fit: cover;
+   }
+   .profile-pic {
+    border-radius: 50%;
+    position: absolute;
+    left: 3px;
+    bottom: -18px;
+  }
+
+  .profile-span {
+    padding-left: 10px;
+    font-weight: 600;
+    color: #333333;
+  }
+
+  .profile-bottons {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    justify-content: space-between;
+  }
+
+  .profile-name {
+    text-align: left;
+    padding-left: 10px;
+    margin-left: 0;
+    padding-top: 40px;
+   
+    
+
+  } 
+
+  .profile-bottons button {
+    width: 150px;
+    height: 34px;
+    border-radius: 4px;
+    font-family:  Georgia, Times, 'Times New Roman', serif;
+    border: none;
+    margin-right: 10px;
+    background-color: #8b828217;
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  .button {
+    width: 100%;
+    background-color: #8b828217;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-family: 20px;
+    color: black;
+    margin-top: 10px;
+    padding: 10px;
+  }
+
+  .profile-bottons button:first-of-type{
+    margin-left: 10px;
+    background-color: blue;
+    color: white; 
+   }
+    .heading {
+      display: flex;
+      align-items: center;
+      margin-top: 20px;
+      justify-content: space-between;
+      margin-left: 10px;
+      font-size: 17px;
+    }
+
+    .heading div span{
+      color: #333333;
+      font-size: 14px;
+    }
+
+    .heading div a {
+      text-decoration: none;
+      color: #187235;
+      padding: 10px;
+    }
+
+    .post-description {
+      font-size: 14px;
+      padding-left: 15px;
+      font-family: 'Times New Roman', Times, serif;
+    }
+
+    .friends {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .friend {
+      border: 0.4px solid #ccc;
+      margin: 5px;
+      border-radius: 5px;
+    }
+
+    .friend-image {
+      margin: 2px;
+    }
+
+    .friend-image img {
+      width: 100%;
+      object-fit: contain;
+      border-radius: 4px;
+    }
+
+    .friend-name {
+      text-align: center;
+      font-size: 15px;
+      font-weight: 400;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      color: #000;
+    }
+}
